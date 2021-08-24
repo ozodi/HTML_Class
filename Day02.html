@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Cool Form</title>
+
+    <style>
+
+        body{
+            background: url("picture.jpg") no-repeat;
+        }
+
+
+        h1 {
+            color: red;
+            /*background-color: aqua;*/
+            text-align: center;
+        }
+
+        h3{
+            color: blue;
+
+        }
+
+        #firstName {
+            background-color: aqua;
+        }
+
+        #lastName{
+            background-color: yellow;
+        }
+
+        input[type="email"]{
+            background-color: green;
+        }
+
+
+       </style>
+
 </head>
 <body>
 
+    <h1> Sign up form </h1>
+    <h1> Sign up form </h1>
+    <h1> Sign up form </h1>
     <h1> Sign up form </h1>
     <form>
 
@@ -92,11 +129,29 @@
             <option value="CA"> California </option>
         </select>
 
+        <br/>
+
+        <label for="dateOfBirth"> Date of Birth: </label>
+        <!--    input:date#dateOfBirth-->
+        <input type="date" name="dateOfBirth" id="dateOfBirth" />
+
+        <br/>
+
+        <textarea name="biography" id="bio" cols="30" rows="10">
+
+        </textarea>
 
 
 
 
+        <br/>
 
+        <!--    input:button#submit_button-->
+        <input type="button" value="Submit" id="submit_button"/>
+
+        <button type="submit" id="submit_btn" > Submit YOur Form</button>
+
+<!--        button:reset@reset_btn-->
 
 
 
