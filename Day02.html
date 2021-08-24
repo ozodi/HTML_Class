@@ -9,19 +9,95 @@
     <h1> Sign up form </h1>
     <form>
 
-        <label> First name : </label>
+        <label for="firstName"> First name : </label>
         <input type="text" id="firstName"  placeholder="Enter name here" />
         <br/>
-        <label>Last name : </label>
-        <input type="text">
+        <label for="lastName">Last name : </label>
+        <input type="text" id="lastName">
 
 
         <div>
 
-            <label> Company : </label>
-            <input type="text">
+            <label for="company"> Company : </label>
+            <input type="text" id="company">
 
         </div>
+
+        <!--input:text#school-->
+        <label for="school"> School name : </label>
+        <input type="text" name="school_name" id="school" />
+        <br/>
+        <label for="email">Email address</label>
+        <input type="email" name="email_add" id="email">
+        <br/>
+
+        <lable for="martial_status"> Married ?</lable>
+        <!--  input: checkbox# martial_status-->
+        <input type="checkbox" name="martial_status" id="martial_status">
+
+        <label for="vaccinated">Vaccinated? </label>
+        <input type="checkbox" name="vaccinated" id="vaccinated">
+
+        <br/>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+        <br/>
+
+
+        <h3>Select your car(s)</h3>
+
+        <label for ="mercedes">Mercedes</label>
+        <input type="checkbox" name="mercedes" id="mercedes" />
+
+        <label for ="bmw">BMW</label>
+        <input type="checkbox" name="BMW" id="bmw" />
+
+        <label for ="toyota">Toyota</label>
+        <input type="checkbox" name="toyota" id="toyota" />
+
+        <h3> Select your Color</h3>
+
+        <label for="red"> Red</label>
+        <input type="radio" name="color" id="red">
+        <label for="blue">Blue</label>
+        <input type="radio" name="color" id="blue">
+        <label for="green">Green</label>
+        <input type="radio" name="color" id="green">
+        <br/>
+<!--        add password field and re-enter password input tbox -->
+        <label for="passwd"> Enter Password: </label>
+        <input type="password" name="password" id="passwd">
+        <br/>
+        <label for="re_password"> Re-Enter Password: </label>
+        <input type="password" name="re_password" id="re_password">
+
+        <br/>
+        <label for="years_of_exp"> Years of Experience </label>
+        <input type="number" name="YearsOfExperience" id="years_of_exp">
+        <br/>
+
+        <label for="upload"> Upload your documents</label>
+        <input type="file" name="docs" id="upload">
+
+        <br/>
+        <label for="state">Select State: </label>
+<!--selsect#state>option*3-->
+        <select name="select_state" id="state">
+            <option> -- </option>
+            <option value="VA">Virginia </option>
+            <option value="NY"> New York </option>
+            <option value="CA"> California </option>
+        </select>
+
+
+
+
+
+
+
 
 
     </form>
